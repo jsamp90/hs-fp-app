@@ -1,5 +1,7 @@
 
 
 def process_user_query(query_string):
-    result = "Hi There!"
-    return result
+    names = query_string.split(' ')
+    result = "Hello"
+    greet = result + names
+    return greet
