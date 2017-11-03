@@ -45,9 +45,9 @@ def process_user_query(query_string):
 
     if str(info[2]) == 'M' or 'm':
     #    print(f'M - With 45 minute workout/day: You must exercise {MostMaleTotalDays} days with a heart rate of at least 120 to reach your goal.\n With 15 minute workout/day: You must exercise {LeastMaleTotalDays} days with a heart rate of at least 165 to reach your goal')
-        a = f'With 45 minute workout/day: You must exercise {MostMaleTotalDays} days with a heart rate of at least 120 to reach your goal.\n With 15 minute workout/day: You must exercise {LeastMaleTotalDays} days with a heart rate of at least 165 to reach your goal'
+        a = f'With 45 minute workouts each day: You must exercise {MostMaleTotalDays} days with an average heart rate of 120 bpm to reach your goal.\n With 15 minute workouts each day: You must exercise {LeastMaleTotalDays} days with an average heart rate of 165 bpm to reach your goal.'
     else:
     #    print(f'F - With 45 minute workout/day: You must exercise {LeastFemaleTotalDays} days with a heart rate of at least 120 to reach your goal.\n With 15 minute workout/day: You must exercise {LeastFemaleTotalDays} days with a heart rate of at least 165 to reach your goal')
-        a = f'With 45 minute workout/day: You must exercise {LeastFemaleTotalDays} days with a heart rate of at least 120 to reach your goal.\n With 15 minute workout/day: You must exercise {LeastFemaleTotalDays} days with a heart rate of at least 165 to reach your goal'
+        a = f'With 45 minute workouts each day: You must exercise {LeastFemaleTotalDays} days with an average heart rate of 120 bpm to reach your goal.\n With 15 minute workouts each day: You must exercise {LeastFemaleTotalDays} days with an average heart rate of 165 bpm to reach your goal.'
 
     return a
